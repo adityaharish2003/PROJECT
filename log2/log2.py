@@ -24,16 +24,13 @@ def command_help():
 while tries < 3:
     passwrd = getpass.getpass()
     if passwrd == 'passwd':
-        for i in range(1,4):
-            print(i)
-            time.sleep(2)
         break
     tries += 1 
 else:
     print("Number of tries exceeded ")
     os._exit(0)
 for i in range(len(username)):
-    print(username[i] , '    :    ' , passwords[i])
+    print(f'{username[i]} : {passwords[i]}')
 command_help()
 command = ""
 while True:
