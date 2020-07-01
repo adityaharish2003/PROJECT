@@ -23,7 +23,7 @@ def command_help():
     print("To view commands , press 'help' ")
 while tries < 3:
     passwrd = getpass.getpass()
-    if passwrd == '24491059':
+    if passwrd == 'passwd':
         for i in range(1,4):
             print(i)
             time.sleep(2)
@@ -31,8 +31,6 @@ while tries < 3:
     tries += 1 
 else:
     print("Number of tries exceeded ")
-    for i in range(500):
-        print('SMD')
     os._exit(0)
 for i in range(len(username)):
     print(username[i] , '    :    ' , passwords[i])
